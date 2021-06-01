@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('GIT PULL') {
             steps {
-                git branch: "main", credentialsId: 'NONE', url: 'https://github.com/naidok56/flutter_ocr.git'
+                git branch: "main", url: 'https://github.com/naidok56/flutter_ocr.git'
             }
         }
         stage('TEST') {
