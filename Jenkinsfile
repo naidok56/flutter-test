@@ -7,11 +7,6 @@ pipeline {
                 git branch: "main", url: 'https://github.com/naidok56/flutter-test.git'
             }
         }
-        stage('TEST') {
-            steps {
-                sh 'flutter test'
-            }
-        }
         stage('BUILD') {
             steps {
                 sh '''
