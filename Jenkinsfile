@@ -9,7 +9,7 @@ pipeline {
         }
         stage('BUILD') {
             steps {
-                bash "flutter build apk"
+                zsh "flutter build apk"
             }
         }
         stage('Distribute Android APK') {
