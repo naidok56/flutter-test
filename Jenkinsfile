@@ -9,7 +9,10 @@ pipeline {
         }
         stage('BUILD') {
             steps {
-                sh 'flutter build apk'
+                 sh '''
+                   #!/bin/sh
+                   flutter build apk --debug
+                   ''' 
             }
         }
         stage('Distribute Android APK') {
