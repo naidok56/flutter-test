@@ -9,7 +9,7 @@ pipeline {
         }
         stage('BUILD') {
             steps {
-                sh 'flutter test'
+                echo "PATH is: $PATH"
             }
         }
         stage('Distribute Android APK') {
