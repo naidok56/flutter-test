@@ -15,8 +15,8 @@ pipeline {
         stage('Distribute Android APK') {
               steps {
                   appCenter apiToken: '0f41449f9af45053cb183fd253ae2610a78a7c75',
-                          ownerName: 'Kylen Naidoo',
-                          appName: 'Flutter-Demo',
+                          ownerName: 'kylen.zn-gmail.com',
+                          appName: 'Flutter-Demo-1',
                           pathToApp: 'build/app/outputs/apk/release/app-release.apk',
                           distributionGroups: 'Testers'
               }
