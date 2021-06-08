@@ -20,7 +20,7 @@ pipeline {
                   appCenter apiToken: '0f41449f9af45053cb183fd253ae2610a78a7c75',
                           ownerName: 'kylen.zn-gmail.com',
                           appName: 'Flutter-Demo-1',
-                          pathToApp: 'build/app/outputs/apk/release/app-release.apk',
+                          pathToApp: 'build/app/outputs/flutter-apk/app-release.apk',
                           distributionGroups: 'Testers'
               }
         }
