@@ -9,7 +9,7 @@ pipeline {
         }
         stage('BUILD') {
             steps {
-                echo "PATH is: $PATH"
+                sh 'echo "Hello World"'
             }
         }
         stage('Distribute Android APK') {
