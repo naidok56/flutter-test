@@ -8,8 +8,10 @@ pipeline {
             }
         }
         stage('BUILD') {
-            steps {
-                flutter build apk
+            steps {           
+                timeout(time: 3, unit: 'MINUTES') {
+                    sh 'flutter build apk'
+                }
             }
         }
         stage('Distribute Android APK') {
