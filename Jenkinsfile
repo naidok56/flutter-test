@@ -10,7 +10,7 @@ pipeline {
         stage('BUILD') {
             steps {           
                 timeout(time: 3, unit: 'MINUTES') {
-                    sh 'flutter build apk'
+                    bash 'echo "Hello World"'
                 }
             }
         }
