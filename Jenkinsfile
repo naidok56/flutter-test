@@ -10,7 +10,7 @@ pipeline {
         stage('BUILD') {
             steps {
                 withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {  
-                sh 'echo "Hello World"'
+                sh 'echo "which flutter"'
              }
                 
             }
