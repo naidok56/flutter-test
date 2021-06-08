@@ -9,9 +9,7 @@ pipeline {
         }
         stage('BUILD') {
             steps {           
-                timeout(time: 3, unit: 'MINUTES') {
-                    bash 'echo "Hello World"'
-                }
+                sh 'echo "Hello World"'
             }
         }
         stage('Distribute Android APK') {
